@@ -70,10 +70,14 @@ choice2 = input("Press s to stroke it, press k to kill it or press r to run away
 
 if choice2 == "s":
     print("The bunny reveals ENORMOUS fangs and bites your head off!")
+    lives = lives - 1 #lose a life
 elif choice2 == "k":
     print("The bunny reveals ENORMOUS fangs, but you kill it before it can bite you!")
+    score = score + 5 # add 5 points
 else:
     print("""the bunny is quicker than it looks...
           and before you know it, it hops onto you....
           reveals ENORMOUS fangs and bites your head off! """)
     lives = lives - 1
+
+lives_score()
