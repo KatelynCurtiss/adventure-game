@@ -80,4 +80,40 @@ else:
           reveals ENORMOUS fangs and bites your head off! """)
     lives = lives - 1
 
-lives_score()
+#scene3
+print("Behind you, in the forest, there is a great ROAR!")
+print()
+sleep(2.0)
+print("You begin to run very quickly - fearing for your life")
+print()
+sleep(1.0)
+print("""Up ahead you see anouther house. Unlike the old crone's cottage, it is warm, inviting and rather homely. """)
+print()
+sleep(1.0)
+print("You try the door, but it is locked!")
+print()
+sleep(1.0)
+print("The roaring and footsteps are right behind you. You need to make a quick decision!")
+print()
+print("Perhaps there is something in your bag which can help?")
+print("You look in your rucksack and find:",rucksack)
+
+#choice3
+
+choice3 = input("Press k to use the key, d to release the duck to buy you some time, or b to to throw the brush at the monster")
+
+if choice3 == "k":
+    print("To your great luck, the key fits the door, and you fell into the house in the nick of time.")
+    score = score + 5 # add 5 to score
+    rucksack.remove("key")
+elif choice3 == "d":
+    print("The duck quaks nervously as you pull it from the bag, but it seems to distract the terrible monster following you")
+    score = score + # add 2 to score
+    rucksack.remove("duck")
+else: 
+    print("You throw the brush at the monster, but it bounces off its head and it gobbles you up instead.")
+    lives = lives - 1 #lose a life
+    rucksack.remove("brush")
+
+    lives_score()
+
