@@ -108,7 +108,7 @@ if choice3 == "k":
     rucksack.remove("key")
 elif choice3 == "d":
     print("The duck quaks nervously as you pull it from the bag, but it seems to distract the terrible monster following you")
-    score = score + # add 2 to score
+    score = score + #add 2 to score
     rucksack.remove("duck")
 else: 
     print("You throw the brush at the monster, but it bounces off its head and it gobbles you up instead.")
